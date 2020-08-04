@@ -19,7 +19,7 @@ class IsUnstealthyNinja:
 
         for item in self.results:
             for key, value in item.items():
-                print(f"URL: {key} - Value: ${value}")
+                print(f"URL: {key} - Value: {value}")
 
     def check_ssrf_vulnerability_recursively(self, url):
         r = requests.get(url)
